@@ -42,11 +42,11 @@ nav .nav-links li a {
 }
 
 nav .logo img {
-    height: 50px;
+    height: 100px;
 }
 
 header {
-    background-image: url('background.jpg');
+    background-image: url("assets/connector.jpg");
     height: 400px;
     background-size: cover;
     background-position: center;
@@ -55,15 +55,16 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-weight: bold;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 50px;
     margin-bottom: 20px;
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 50px;
 }
 
 .login-section {
@@ -129,6 +130,47 @@ header p {
   #contact form button:hover {
     background-color: transparent;
   }
+
+  /*card section*/
+  .card-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.card-item:hover {
+    transform: translateY(-5px);
+}
+
+.card-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-item .role {
+    display: block;
+    background-color: #f7dff5;
+    padding: 8px 15px;
+    border-radius: 50px;
+    margin-top: 10px;
+    font-weight: 600;
+}
 
 footer {
     background-color: black;

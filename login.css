@@ -3,9 +3,10 @@
 
 /*style for header*/
 h1 {
-    background-color: black;
-    color:white;
+    color:black;
+    background-color:white;
     max-width: 100%;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /*style for body*/
@@ -16,21 +17,19 @@ body{
     padding-right: 100px;
     max-width:30%;
     max-height:100%;
-    color:white;
+    color:black;
     
 }
 
 /*style for form*/
 form {
-    
-    background-color: black;
     width:500px;
     height: 500px;
 }
 
 /*style for fieldset*/
 fieldset {
-    background-color:black;
+    background: url(assets/empportal.png);
 }
 
 /* style for input types which either clears the form or submits form after user enter detail*/
