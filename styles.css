@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: black;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-links li {
+    display: inline;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+nav .nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    margin-right: 20px;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+header {
+    background-image: url('background.jpg');
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.login-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.login-options a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-options a:hover {
+    background-color: black;
+}
+
+/* Contact section styles */
+#contact {
+    background-color:black;
+    color: #fff; /* White text */
+    padding: 60px 0;
+  }
+
+  #contact h2 {
+    margin-bottom: 20px; /* Add space below "Contact Us" heading */
+}
+
+#contact p {
+    margin-bottom: 20px; /* Add space below "Contact Us" paragraph */
+}
+  
+  #contact form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff; /* White text for form labels */
+  }
+  
+  #contact form input[type="text"],
+  #contact form input[type="email"],
+  #contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #contact form textarea {
+    height: 150px;
+  }
+  
+  #contact form button {
+    background-color: green;
+    color: #fff; /* White button text */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #contact form button:hover {
+    background-color: transparent;
+  }
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

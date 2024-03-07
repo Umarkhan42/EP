@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/*style for header*/
+h1 {
+    background-color: black;
+    color:white;
+    max-width: 100%;
+}
+
+/*style for body*/
+body{
+    
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width:30%;
+    max-height:100%;
+    color:white;
+    
+}
+
+/*style for form*/
+form {
+    
+    background-color: black;
+    width:500px;
+    height: 500px;
+}
+
+/*style for fieldset*/
+fieldset {
+    background-color:black;
+}
+
+/* style for input types which either clears the form or submits form after user enter detail*/
+input[type = submit],input[type=reset] {
+    background-color: green;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
