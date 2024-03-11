@@ -1,0 +1,136 @@
+.section{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+  
+  .content-frame{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+  
+  }
+  
+  .fdm-logo-black-1-icon {
+    height: 77.9px;
+    width: 126px;
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .container2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 8rem;
+    padding-left: 15rem;
+  }
+  
+  .summary, p{
+    text-align: center;
+    
+    font-family: var(--font-inter);
+  
+  }
+  
+  .bring{
+    font-weight: bold;
+  }
+  .together{
+    font-weight: bold;
+  }
+  .and{
+    font-weight: bold;
+  }
+  
+  .home, .about{
+    font-family: var(--font-inter);
+    font-weight: bold;
+  
+  
+  }
+  
+  .bring, .tech, .people, .together, .and{
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .bring, .people, .and{
+    display: inline;
+  }
+  
+  .tech, .together{
+    display: inline;
+  }
+  
+  
+  
+  .ipad-image, .image-1 {
+    height: 450px;
+    position: relative;
+    object-fit: contain;
+  }
+  
+  .bring-people-together{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .already-empl {
+    font-size: 14px;
+    color: #555;
+    
+  }
+  
+  form label {
+    margin: 0; /* Set margin to zero for labels */
+  }
+  
+  
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"] {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    text-align: center;
+  }
+  
+  input[type="submit"] {
+    background-color: #2B99FF;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: grey;
+  }
+  
+  .container3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 3rem;
+  }

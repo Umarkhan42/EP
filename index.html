@@ -1,116 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FDM Employee Portal</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-<nav>
-    <div class="container">
-        <div class="logo">
-            <img src="assets/fdmimage.png" alt="FDM Logo">
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;800&display=swap"
+    />
+  <body>
+    <div class="section">
+      <header class="nav-bar">
+        <img
+          class="fdm-logo-black-1-icon"
+          loading="lazy"
+          alt=""
+          src="./assets/fdmlogoblack-1@2x.png"
+        />
+        <div class="content-frame">
+          <div class="home">Home</div>
+          <div class="about">About</div>
         </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#services">Our Services</a></li>
-            <li><a href="#login">Login</a></li>
-        </ul>
-    </div>
-</nav>
+      </header>
+      <div class="container2">
+        <div class="bring-people-together">
+          <div class="summary">
+            <p class="bring">Bringing</p>
+            <p class="people">‎ people</p>
+            <p class="and"> ‎ and</p> <br>
+            <p class="tech">technology</p>
+            <p class="together">‎ together</p>
+            <p class="global">Global leader in IT services, training, and workforce solutions.</p>
+          </div>
+          
 
-<header>
-    <div class="hero">
-        <h1>Welcome to FDM Employee Portal</h1>
-        <p>Empowering your career journey.</p>
-    </div>
-</header>
+          <div class="form">
+            <p class="already-empl">Already an employee? Sign in</p>
+            <form>
+              <label for="username-email"></label>
+              <input type="text" id="username-email" name="username-email" placeholder="username or email">
+              <label for="password"></label>
+              <input type="password" id="password" name="password" placeholder="password">
+              <input type="submit" value="Sign in">
+            </form>
+          </div>
 
-<section id="about">
-    <div class="container">
-      <h2>About</h2>
-      <p>FDM is a global organisation with centres in the follow regions: <p>
-      <li>UK</li>
-      <li>Germany</li>
-      <li>Hong Kong</li>
-      <li>Singapore</li>
-      <li>China</li>
-      <li>Australia</li>
-      <li>US</li>
-      <p>In addition we have consultants placed with clients across Europe and South Africa. </p>
-    </div>
-  </section>
-
-    <section id="services" class="card-section">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="card-list">
-                <a href="#" class="card-item">
-                    <img src="assets/businessService.avif">
-                    <span class="role">Business Services</span>
-                    <p>FDM provides business consulting services, working across operational and business transformation programmes to help deliver projects and provide ongoing support.</p>
-                    <p>Our people combine technical excellence with strong interpersonal skills and work in some of the most demanding and challenging environments. We provide ongoing professional and technical support for all of our consultants to help with their personal development and to ensure we provide a seamless service to our clients.</p>
-                    <p>Our diverse talent pools, combined with the ability to transfer FDM consultants to permanent in-house resources means our clients can benefit from a range of experiences and technical skills in the creation of their own balanced teams.</p>
-                </a>
-                <a href="#" class="card-item">
-                    <img src="assets/techservice.jpg">
-                    <span class="role">Technical Services</span>
-                    <p>FDM's technology consulting services provide your organisation with IT and business consultants who are experts at supporting technical organisational projects.</p>
-                    <p>Our technical consultants work within our clients IT teams to support complex projects and to provide solutions to business problems. Our consultants are trained to the highest standards and work across the software development lifecycle including design, development, testing, analysis and maintenance as well as providing ongoing support.</p>
-                    <p>Our people combine technical excellence with strong interpersonal skills and work in some of the most demanding and challenging environments. We provide ongoing professional and technical support for all of our consultants to help with their personal development and to ensure we offer a seamless service to our clients.</p>
-                    <p>Our diverse talent pools, combined with the ability to transfer FDM consultants to permanent in-house resources, means our clients can benefit from a range of experiences and technical skills in the creation of their own balanced teams.</p>
-                </a>
-                <a href="#" class="card-item">
-                    <img src="assets/alliances.jpg">
-                    <span class="role">Alliances</span>
-                    <p>We work in partnership with our clients to help them achieve specific business objectives through the provision of quality IT and business solutions.</p>
-                    <p>FDM is an Approved Training Partner and a Workforce Development Partner to world’s leading technology providers
-                    We make sure that our clients can scale at speed by providing a seamless onboarding and performance management process.</p>
-                    <p>We collaborate with our partners to create net new talent across specialist skills.</p>
-                    <img src="assets/microsoftlogo.avif" alt="Microsoft logo">
-                    <img src="assets/awslogo.png" alt="Microsoft logo">
-                </a>
-            </div>
         </div>
-    </section>
-
-<main>
-    <section id="login" class="login-section">
-        <div class="container">
-            <h2>Login to Your Account</h2>
-            <div class="login-options">
-                <a href="loginWithEmail.html">Login with Email</a>
-                <a href="loginWithUsername.html">Login with Username</a>
-            </div>
+        <div class="ipad-image">
+          <img class="image-1" src="./assets/image-1@2x.png" alt="">
         </div>
-    </section>
-</main>
+      </div>
 
-<section id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Have questions or feedback? Contact our support team!</p>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
+      <div class="container3">
+
+        <img src="./assets/image-4@2x.png" alt="">
+        <img src="./assets/image-3@2x.png" alt="">
+      </div>
     </div>
-  </section>
-
-<footer>
-    <div class="container">
-        <p>&copy; 2024 FDM Employee Portal</p>
-    </div>
-</footer>
-
-</body>
+  </body>
 </html>
