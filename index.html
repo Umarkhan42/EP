@@ -38,11 +38,11 @@
 
           <div class="form">
             <p class="already-empl">Already an employee? Sign in</p>
-            <form>
+            <form action="login.php" method="post">
               <label for="username-email"></label>
-              <input type="text" id="username-email" name="username-email" placeholder="username or email">
+              <input type="text" id="username-email" name="username-email" placeholder="username or email" required>
               <label for="password"></label>
-              <input type="password" id="password" name="password" placeholder="password">
+              <input type="password" id="password" name="password" minlength="6" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
               <input type="submit" value="Sign in">
             </form>
           </div>
