@@ -3,11 +3,9 @@ const closeBtn = document.querySelector(".close-btn");
 const chatbox = document.querySelector(".chatbox");
 const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
-
 let userMessage = null; // Variable to store user's message
-const API_KEY = "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"; // Paste your API key here
+const API_KEY = "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"; // Paste your API key here
 const inputInitHeight = chatInput.scrollHeight;
-
 const createChatLi = (message, className) => {
     // Create a chat <li> element with passed message and className
     const chatLi = document.createElement("li");
@@ -17,24 +15,21 @@ const createChatLi = (message, className) => {
     chatLi.querySelector("p").textContent = message;
     return chatLi; // return chat <li> element
 }
-
 const generateResponse = (chatElement) => {
     const API_URL = "https://api.openai.com/v1/chat/completions";
     const messageElement = chatElement.querySelector("p");
-
     // Define the properties and message for the API request
     const requestOptions = {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": `Bearer ${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}`
+            "Authorization": `Bearer ${API_KEY}`
         },
         body: JSON.stringify({
             model: "gpt-3.5-turbo",
             messages: [{role: "user", content: userMessage}],
         })
     }
-
     // Send POST request to API, get response and set the reponse as paragraph text
     fetch(API_URL, requestOptions).then(res => res.json()).then(data => {
         messageElement.textContent = data.choices[0].message.content.trim();
@@ -43,15 +38,12 @@ const generateResponse = (chatElement) => {
         messageElement.textContent = "Oops! Something went wrong. Please try again.";
     }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
 }
-
 const handleChat = () => {
     userMessage = chatInput.value.trim(); // Get user entered message and remove extra whitespace
     if(!userMessage) return;
-
     // Clear the input textarea and set its height to default
     chatInput.value = "";
     chatInput.style.height = `${inputInitHeight}px`;
-
     // Append the user's message to the chatbox
     chatbox.appendChild(createChatLi(userMessage, "outgoing"));
     chatbox.scrollTo(0, chatbox.scrollHeight);
@@ -64,13 +56,11 @@ const handleChat = () => {
         generateResponse(incomingChatLi);
     }, 600);
 }
-
 chatInput.addEventListener("input", () => {
     // Adjust the height of the input textarea based on its content
     chatInput.style.height = `${inputInitHeight}px`;
     chatInput.style.height = `${chatInput.scrollHeight}px`;
 });
-
 chatInput.addEventListener("keydown", (e) => {
     // If Enter key is pressed without Shift key and the window 
     // width is greater than 800px, handle the chat
@@ -79,7 +69,6 @@ chatInput.addEventListener("keydown", (e) => {
         handleChat();
     }
 });
-
 sendChatBtn.addEventListener("click", handleChat);
 closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
