@@ -1,7 +1,4 @@
-body {
-    margin: 0;
-    line-height: normal;
-  }
+
   
   :root {
     /* fonts */
@@ -17,12 +14,12 @@ body {
     --color-black: #000;
   
     /* Paddings */
-    --padding-40xl: 59px;
+    /* --padding-40xl: 59px;
     --padding-10xl: 29px;
     --padding-4xl: 23px;
     --padding-xs: 12px;
     --padding-xl: 20px;
     --padding-smi: 13px;
-    --padding-8xl: 27px;
+    --padding-8xl: 27px; */
   }
   

@@ -1,0 +1,119 @@
+.container{
+    display: grid;
+    grid-template-areas: 
+    'aside header header'
+    'aside annoucements todo'
+    'aside projectManagement deskSupport';
+    grid-template-columns: 100px 1fr 0.6fr;
+    gap: 4rem;    
+}
+
+body{
+    margin-right: 3rem;
+}
+
+aside{
+    grid-area: aside;
+    background-color:#2b99ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+.annoucements{
+    grid-area: annoucements;
+    background-color: var(--color-gainsboro);
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.46);
+    font-size: var(--font-size-5xl);
+    height: 20rem;
+    overflow: auto;
+    
+
+}
+
+.annoucements-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.announcements-header{
+    color: #2b99ff;
+    font-size: 2rem;
+}
+
+
+.todo{
+    grid-area: todo;
+    background-color: var(--color-gainsboro);
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.46);
+    padding: var(--padding-smi) 24px var(--padding-3xs);
+    gap: var(--gap-xs);
+    font-size: var(--font-size-5xl);
+    color: var(--blue);
+    height: 20rem;
+    overflow: auto;
+
+
+}
+
+.deskSupport{
+    grid-area: deskSupport;
+    background-color: var(--color-gainsboro);
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.46);
+    padding: var(--padding-smi) 24px var(--padding-3xs);
+    gap: var(--gap-xs);
+    font-size: var(--font-size-5xl);
+    color: var(--blue);
+    height: 20rem;
+    margin-bottom: 4rem;
+    overflow: auto;
+
+}
+
+.projectManagement{
+    grid-area: projectManagement;
+    background-color: var(--color-gainsboro);
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.46);
+    padding: var(--padding-smi) 24px var(--padding-3xs);
+    gap: var(--gap-xs);
+    font-size: var(--font-size-5xl);
+    color: var(--blue);
+    height: 20rem;
+    overflow: auto;
+
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.header-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+
+
+.fdm-logo{
+    height: 105px;
+    width: 170px;
+}
+
+
+.image-8-icon {
+    height: 51px;
+    width: 50px;
+  } 
