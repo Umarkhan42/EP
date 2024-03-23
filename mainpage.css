@@ -46,6 +46,7 @@ aside{
 .announcements-header{
     color: #2b99ff;
     font-size: 2rem;
+    font-family: "Inter", sans-serif;
 }
 
 
@@ -63,6 +64,21 @@ aside{
 
 }
 
+.todo-header{
+    color: #2b99ff;
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+}
+
+.todo-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
 .deskSupport{
     grid-area: deskSupport;
     background-color: var(--color-gainsboro);
@@ -77,6 +93,28 @@ aside{
 
 }
 
+#help, select {
+    border-radius: 25px;
+    width: 50%;
+    height: 30px;
+}
+
+.deskSupport-header{
+    color: #2b99ff;
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+}
+
+.deskSupport-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+
 .projectManagement{
     grid-area: projectManagement;
     background-color: var(--color-gainsboro);
@@ -88,6 +126,33 @@ aside{
     height: 20rem;
     overflow: auto;
 
+}
+
+.projectManagement-header{
+    color: #2b99ff;
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+}
+
+.projectManagement-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+#selectproject, select {
+    border-radius: 25px;
+    width: 190px;
+}
+  
+#reviewproject, select {
+    border-radius: 25px;
+    height: 100px;
+    width: 190px;
+    outline: 1px solid black; 
 }
 
 header{
