@@ -21,6 +21,7 @@ aside{
     justify-content: center;
     gap: 40px;
     height: 1080px;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.46);
 }
 
 
@@ -29,6 +30,7 @@ aside{
     background-color: var(--color-gainsboro);
     box-shadow: 0 4px 50px rgba(0, 0, 0, 0.46);
     font-size: var(--font-size-5xl);
+    border: 1px solid #ccc;
     height: 20rem;
     overflow: auto;
     
@@ -60,6 +62,7 @@ aside{
     font-size: var(--font-size-5xl);
     color: var(--blue);
     height: 20rem;
+    border: 1px solid #ccc;
     overflow: auto;
 
 
@@ -90,6 +93,7 @@ aside{
     color: var(--blue);
     height: 20rem;
     margin-bottom: 4rem;
+    border: 1px solid #ccc;
     overflow: auto;
 
 }
@@ -123,6 +127,7 @@ aside{
     padding: var(--padding-smi) 24px var(--padding-3xs);
     gap: var(--gap-xs);
     font-size: var(--font-size-5xl);
+    border: 1px solid #ccc;
     color: var(--blue);
     height: 20rem;
     overflow: auto;
