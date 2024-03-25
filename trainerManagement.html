@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="trainerManagement.css">
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+
+
+        <aside>
+            
+            <div class="icons-wrapper">
+                <img 
+                class="" 
+                loading="lazy" 
+                alt="" 
+                src="./public/icons.svg" />
+            </div>
+            <div class="frame-wrapper">
+                <img
+                class=""
+                loading="lazy"
+                alt=""
+                src="./public/group-34.svg"
+                />
+            </div>
+            <div class="vector-wrapper">
+                <img
+                class=""
+                loading="lazy"
+                alt=""
+                src="./public/vector.svg"
+                />
+            </div>
+            <div class="messages-icon">
+                <img
+                class=""
+                loading="lazy"
+                alt=""
+                src="./public/group-33.svg"
+            />
+            </div>
+    
+    
+            <div class="frame-container">
+                <img
+                class=""
+                loading="lazy"
+                alt=""
+                src="./public/group-32.svg"
+                />
+            </div>
+            <div class="g1970-parent">
+                <img
+                class=""
+                loading="lazy"
+                alt=""
+                src="./public/g1970.svg"
+                />
+            </div>
+            <div class="image-8-wrapper">
+                <img
+                class="image-8-icon"
+                loading="lazy"
+                alt=""
+                src="./public/image-8@2x.png"
+                />
+            </div>
+
+            
+        </aside>
+
+
+        <section class="current">
+            <div class="Resources">
+                <h3>E-learning Resources</h3>
+            </div>
+            <div class="gap"></div>
+
+            <div class="Progress">
+                <h3> Progress Bar</h3>
+            </div>
+
+        </section>
+    
+
+        <section class="update">
+            <form id="assignForm" action="update.php" method="POST">
+                <label for="Group/User">Group/User:</label><br>
+                <input type="text" id="Group/User" name="Group/User" placeholder="Enter Group / User"><br><br>
+                
+                <label for="Task">Task:</label><br>
+                <input type="text" id="Task" name="Task"><br><br>
+                
+                <input type="submit" value="Assign">
+            </form>
+
+            <div class="gap"></div>
+
+            <form id="assignForm2" action="update.php" method="POST">
+                <label for="feedback">Feedback</label><br>
+                <textarea type="text" id="feedback" name="feedback"></textarea>
+                
+                <div class="sendButton"><br><input type="submit" value="Send"></div>
+                <div class = "cancelButton"><input type="reset" value="Cancel"></div>
+            </form>
+            
+        </section>
+
+        <div class="blank2"></div>
+
+    </div>
+    
+</body>
+</html>
