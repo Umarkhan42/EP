@@ -38,13 +38,13 @@
 
           <div class="form">
             <p class="already-empl">Already an employee? Sign in</p>
-            <form action="login.php" method="post">
+            <form id="loginForm">
               <label for="username-email"></label>
-              <input type="text" id="username-email" name="username-email" placeholder="username or email" required>
+              <input type="text" id="username-email" name="username-email" placeholder="Username or email" required>
               <label for="password"></label>
-              <input type="password" id="password" name="password" minlength="6" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+              <input type="password" id="password" name="password"  placeholder="Password"  required>
               <input type="submit" value="Sign in">
-            </form>
+          </form>
           </div>
 
         </div>
@@ -59,5 +59,46 @@
         <img src="./assets/image-3@2x.png" alt="">
       </div>
     </div>
+
+    <script>
+      document.getElementById("loginForm").addEventListener("submit", function(event) {
+          event.preventDefault(); // Prevent the form from submitting normally
+          
+          // Retrieve input values
+          var usernameOrEmail = document.getElementById("username-email").value;
+          var password = document.getElementById("password").value;
+  
+          // Load JSON data
+          fetch("employees.json")
+          .then(response => response.json())
+          .then(data => {
+              // Check if username/email and password match
+              var employee = data.employees.find(e => (e.name === usernameOrEmail || e.email === usernameOrEmail) && e.password === password);
+              if (employee) {
+                  // Login successful, redirect based on role
+                  switch (employee.role) {
+                      case "Trainer":
+                          window.location.href = "trainerHP.html";
+                          break;
+                      case "Consultant":
+                          window.location.href = "consultantsHP.html";
+                          break;
+                      case "Internal Staff":
+                          window.location.href = "internalStaffHP.html";
+                          break;
+                      default:
+                          alert("Invalid role!");
+                  }
+              } else {
+                  // Login failed, display error message
+                  alert("Invalid username/email or password.");
+              }
+          })
+          .catch(error => {
+              console.error('Error:', error);
+          });
+      });
+  </script>
+  
   </body>
 </html>
