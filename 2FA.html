@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2FA</title>
+    <link rel="stylesheet" href="2FA.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script defer src="authenticator.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Two-Factor Authentication</h1>
+        <p>Enter your FDM email</p>
+        <input type="email" id="email" maxlength="30">
+
+        <button id="sendCodeButton" onclick="sendCode()">Send Code</button>
+        <p>Enter 6 digit code sent to email</p>
+
+        <input type="text" id="input_code" maxlength="6">
+        <button id="verifyButton" onclick="verifyCode(document.getElementById('input_code').value)">Verify</button>
+        <p id="errorMessage" class="error-message"></p>
+        <p id="resendMessage">Didn't receive the code? <a href="#" onclick="resendCode()">Resend</a></p>
+        <p id="timer"></p>
+    </div>
+</body>
+</html>
