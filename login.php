@@ -14,12 +14,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = mysqli_query($conn, $query);
 
     if (mysqli_num_rows($result) > 0) {
+
+
+        // Fetch user's role from the database result
+        $row = mysqli_fetch_assoc($result);
+        $role = $row['Role'];
         // Start the session
         session_start();
         $_SESSION['email'] = $email;
-        // Redirect to success.php
-        header("Location: updateinfo.php");
-    } else {
+        // Redirect based on user's role
+        switch ($role) {
+            case 'Internal Staff':
+                header("Location: internalstaffHP.html");
+                break;
+            case 'Consultant':
+                header("Location: consultantsHP.html");
+                break;
+            case 'Trainer':
+                header("Location: trainerHP.html");
+                break;
+                
+            default:
+                // Default redirection if role is not recognized
+                header("Location: index.php");
+                break;
+        }
+        exit();
+    } 
+    else {
         // Invalid credentials, redirect back to the login page with an error message
         header("Location: index.php");
         exit();

@@ -31,9 +31,9 @@ if ($user = $result->fetch_assoc()) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="updateinfo.css">
-    <link rel="stylesheet" type="text/css" href="global.css">
+    <link rel="stylesheet" type="text/css" href="cssFolder/reset.css">    
+    <link rel="stylesheet" type="text/css" href="cssFolder/updateinfo.css">   
+    <link rel="stylesheet" type="text/css" href="cssFolder/global.css">   
     <title>Document</title>
 </head>
 
@@ -43,10 +43,15 @@ if ($user = $result->fetch_assoc()) {
 
 
         <aside>
-
-            <div class="icons-wrapper">
-                <img class="" loading="lazy" alt="" src="./public/icons.svg" />
-            </div>
+        <a href="updateinfo.php">
+                <div class="icons-wrapper">
+                    <img 
+                    class="" 
+                    loading="lazy" 
+                    alt="" 
+                    src="./public/icons.svg" />
+                </div>
+            </a>
             <div class="frame-wrapper">
                 <img class="" loading="lazy" alt="" src="./public/group-34.svg" />
             </div>
@@ -66,8 +71,25 @@ if ($user = $result->fetch_assoc()) {
             </div>
 
             <div class="home2">
-                <img src="./public/home.png" alt="">
+                <?php 
+                    switch ($user['Role']) {
+                        case 'Internal Staff':
+                            echo '<a href="internalstaffHP.html"><img src="./public/home.png" alt=""></a>';
+                            break;
+                        case 'Consultant':
+                            echo '<a href="consultantsHP.html"><img src="./public/home.png" alt=""></a>';
+                            break;
+                        case 'Trainer':
+                            echo '<a href="trainerHP.html"><img src="./public/home.png" alt=""></a>';
+                            break;
+                        default:
+                            // Default action if role is not recognized
+                            echo '<a href="index.php"><img src="./public/home.png" alt=""></a>';
+                            break;
+                    }
+                ?>
             </div>
+
         </aside>
 
 
