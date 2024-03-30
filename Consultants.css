@@ -1,0 +1,52 @@
+.container{
+    display: grid;
+    grid-template-areas: 
+    'aside file file'
+    'aside interaction interaction';
+    grid-template-columns: 100px 1fr 1fr ;
+}
+
+aside{
+    grid-area: aside;
+    background-color:#2b99ff;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.46);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: 1080px;
+}
+
+.image-8-icon {
+    height: 51px;
+    width: 50px;
+}
+
+.file {
+  grid-area: file;
+  display: flex;
+  padding-left: 36%;
+  padding-top: 10%;
+}
+
+.interaction{
+  grid-area: interaction;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20%;
+}
+
+.Clients {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  height: 10rem;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.46);
+  background-color: #f9f9f9;
+}
