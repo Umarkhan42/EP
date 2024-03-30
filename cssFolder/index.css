@@ -134,3 +134,7 @@
     width: 100%;
     padding-top: 3rem;
   }
+
+  .g-recaptcha{
+    margin: 10px 0px;
+}

@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" type="text/css" href="cssFolder/global.css">
     <link rel="stylesheet" type="text/css" href="cssFolder/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;800&display=swap" />
@@ -41,6 +42,7 @@
               <input type="text" id="username-email" name="username-email" placeholder="username or email" required>
               <label for="password"></label>
               <input type="password" id="password" name="password" placeholder="password"  required>
+              <div class="g-recaptcha" data-sitekey="6Lc91JspAAAAAM_yfyvKId6xYvZKKBIRsN8bbHqS"></div>
               <input type="submit" value="Sign in">
             </form>
           </div>
