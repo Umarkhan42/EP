@@ -93,7 +93,7 @@
     
 
         <section class="update">
-            <form id="updateForm" action="update.php" method="POST">
+            <form id="updateForm" action="addNew.php" method="post">
                 <h3>Add employee</h3>
 
                 <label for="name">Name:</label><br>
@@ -113,6 +113,12 @@
                 
                 <label for="email">Email:</label><br>
                 <input type="email" id="email" name="email" placeholder="Enter email"><br><br>
+                
+                <label for="role">Role:</label><br>
+                <input type="text" id="role" name="role" placeholder="Enter role"><br><br>
+
+                <label for="password">Password:</label><br>
+                <input type="text" id="password" name="password" placeholder="Enter password"><br><br>
                 
                 <input type="submit" value="Save Changes">
             </form>
