@@ -67,7 +67,7 @@
                 />
             </div>
 
-            <a href="internalStaffHP.html">
+            <a href="internalStaffHP.php">
                 <div>
                     <img src="./public/home.png" alt="">            
                 </div>
@@ -89,6 +89,20 @@
                 <h3> Manage recruitment</h3>
             </div>
 
+            <div class="gap"></div>
+
+            <div class="addAnnouncement">
+                <form id="announcementForm" action="addAnnouncement.php" method="post">
+                    <h3>Add Announcement</h3>
+
+                    <input type="text" id="announcementTitle" name="announcementTitle" placeholder="Enter announcement title" required>
+
+                    <textarea id="announcementText" name="announcementText" placeholder="Enter announcement" required></textarea><br><br>
+
+                    <input type="submit" value="Add Announcement">
+                </form>
+            </div>
+
         </section>
     
 
@@ -97,28 +111,28 @@
                 <h3>Add employee</h3>
 
                 <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" placeholder="Enter name"><br><br>
+                <input type="text" id="name" name="name" placeholder="Enter name" required><br><br>
                 
                 <label for="dob">Date of Birth:</label><br>
-                <input type="date" id="dob" name="dob"><br><br>
+                <input type="date" id="dob" name="dob" required><br><br>
                 
                 <label for="address">Address:</label><br>
-                <input type="text" name="address" placeholder="Enter address"></input><br><br>
+                <input type="text" name="address" placeholder="Enter address" required></input><br><br>
 
                 <label for="postcode">postcode:</label><br>
-                <input type="text" name="postcode" placeholder="Enter postcode"></input><br><br>
+                <input type="text" name="postcode" placeholder="Enter postcode" required></input><br><br>
                 
                 <label for="phone">Phone Number:</label><br>
-                <input type="tel" id="phone" name="phone" placeholder="Enter phone number"><br><br>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required><br><br>
                 
                 <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="Enter email"><br><br>
+                <input type="email" id="email" name="email" placeholder="Enter email" required><br><br>
                 
                 <label for="role">Role:</label><br>
-                <input type="text" id="role" name="role" placeholder="Enter role"><br><br>
+                <input type="text" id="role" name="role" placeholder="Enter role" required><br><br>
 
                 <label for="password">Password:</label><br>
-                <input type="text" id="password" name="password" placeholder="Enter password"><br><br>
+                <input type="text" id="password" name="password" placeholder="Enter password" required><br><br>
                 
                 <input type="submit" value="Save Changes">
             </form>

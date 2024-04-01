@@ -1,3 +1,7 @@
+<?php
+session_start();
+include 'db.php'; // Include your database connection script
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,10 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="cssFolder/reset.css">
+
     <link rel="stylesheet" type="text/css" href="cssFolder/mainpage.css">
     <link rel="stylesheet" type="text/css" href="cssFolder/global.css">
-    <script src="script.js" defer></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -29,7 +32,6 @@
                     src="./public/icons.svg" />
                 </div>
             </a>
-
             <div class="frame-wrapper">
                 <img
                 class=""
@@ -74,17 +76,17 @@
             </div>
     
     
-            <a href="Consultants.html">
+            <a href="trainerManagement.html">
                 <div class="image-8-wrapper">
                     <img
                     class="image-8-icon"
                     loading="lazy"
                     alt=""
-                    src="./public/image-9@2x.png"
+                    src="./public/image-6@2x.png"
                     />
                 </div>
             </a>
-           
+
               
         </aside>
 
@@ -100,12 +102,20 @@
         <section class="annoucements">
             <div class="annoucements-content">
                 <h1 class="announcements-header">Announcements</h1><br>
-                <h2 class="subheader">HR</h2>
-                <p class="text1">Any changes to personal details can be made through "My Profile"</p><br>
-                <h2 class="subheader">Management</h2>
-                <p class="text1">Example announcement...</p><br>
-                <h2 class="subheader">HR</h2>
-                <p class="text1">Example announcement...</p><br>
+        
+                        <?php
+                            $sql = "SELECT * FROM announcements";
+                            $valid = mysqli_query($conn, $sql);
+                            if (mysqli_num_rows($valid) > 0){
+                                while ($found = mysqli_fetch_assoc($valid)) {
+                                    // echo "<div class='single'>";
+                                    echo "<h2>" . $found["Title"] . "</h2>";
+                                    echo "<p>" . $found["Content"] . "</p>" . "<br>";
+                                    // echo "</div>";
+                                }
+                            }
+        
+                        ?>
             </div>
         </section>
 
@@ -159,26 +169,6 @@
                 <p>FAQ</p>
             </div>
         </section>
-        <button class="chatbot-toggler">
-            <span class="material-symbols-rounded"></span>
-            <span class="material-symbols-outlined"></span>
-          </button>
-          <div class="chatbot">
-            <header>
-              <h2>Chatbot</h2>
-              <span class="close-btn material-symbols-outlined">close</span>
-            </header>
-            <ul class="chatbox">
-              <li class="chat incoming">
-                <span class="material-symbols-outlined">star.jpg</span>
-                <p>Hi there 👋<br>How can I help you today?</p>
-              </li>
-            </ul>
-            <div class="chat-input">
-              <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
-              <span id="send-btn" class="material-symbols-rounded">send</span>
-            </div>
-          </div>
     </div>
 </body>
 </html>

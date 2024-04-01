@@ -46,13 +46,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Redirect based on user's role
             switch ($role) {
                 case 'Internal Staff':
-                    header("Location: internalstaffHP.html");
+                    header("Location: internalstaffHP.php");
                     break;
                 case 'Consultant':
-                    header("Location: consultantsHP.html");
+                    header("Location: consultantsHP.php");
                     break;
                 case 'Trainer':
-                    header("Location: trainerHP.html");
+                    header("Location: trainerHP.php");
                     break;
                 default:
                     // Default redirection if role is not recognized

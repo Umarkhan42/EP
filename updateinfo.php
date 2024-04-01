@@ -74,13 +74,13 @@ if ($user = $result->fetch_assoc()) {
                 <?php 
                     switch ($user['Role']) {
                         case 'Internal Staff':
-                            echo '<a href="internalstaffHP.html"><img src="./public/home.png" alt=""></a>';
+                            echo '<a href="internalstaffHP.php"><img src="./public/home.png" alt=""></a>';
                             break;
                         case 'Consultant':
-                            echo '<a href="consultantsHP.html"><img src="./public/home.png" alt=""></a>';
+                            echo '<a href="consultantsHP.php"><img src="./public/home.png" alt=""></a>';
                             break;
                         case 'Trainer':
-                            echo '<a href="trainerHP.html"><img src="./public/home.png" alt=""></a>';
+                            echo '<a href="trainerHP.php"><img src="./public/home.png" alt=""></a>';
                             break;
                         default:
                             // Default action if role is not recognized

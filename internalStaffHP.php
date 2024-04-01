@@ -1,3 +1,8 @@
+<?php
+session_start();
+include 'db.php'; // Include your database connection script
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,9 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="cssFolder/reset.css">
+    <link rel="stylesheet" type="text/css" href="cssFolder/global.css">  
+    <link rel="stylesheet" type="text/css" href="cssFolder/mainpage.css">  
 
-    <link rel="stylesheet" type="text/css" href="cssFolder/mainpage.css">
-    <link rel="stylesheet" type="text/css" href="cssFolder/global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -28,6 +33,7 @@
                     src="./public/icons.svg" />
                 </div>
             </a>
+
             <div class="frame-wrapper">
                 <img
                 class=""
@@ -71,17 +77,16 @@
                 />
             </div>
     
-    
-            <a href="trainerManagement.html">
-                <div class="image-8-wrapper">
-                    <img
-                    class="image-8-icon"
-                    loading="lazy"
-                    alt=""
-                    src="./public/image-6@2x.png"
-                    />
-                </div>
-            </a>
+    <a href="employeeManagement.php">
+        <div class="image-8-wrapper">
+            <img
+            class="image-8-icon"
+            loading="lazy"
+            alt=""
+            src="./public/image-8@2x.png"
+            />
+        </div>
+    </a>
 
               
         </aside>
@@ -98,12 +103,21 @@
         <section class="annoucements">
             <div class="annoucements-content">
                 <h1 class="announcements-header">Announcements</h1><br>
-                <h2 class="subheader">HR</h2>
-                <p class="text1">Any changes to personal details can be made through "My Profile"</p><br>
-                <h2 class="subheader">Management</h2>
-                <p class="text1">Example announcement...</p><br>
-                <h2 class="subheader">HR</h2>
-                <p class="text1">Example announcement...</p><br>
+
+                <?php
+                    $sql = "SELECT * FROM announcements";
+                    $valid = mysqli_query($conn, $sql);
+                    if (mysqli_num_rows($valid) > 0){
+                        while ($found = mysqli_fetch_assoc($valid)) {
+                            echo "<h2>" . $found["Title"] . "</h2>";
+                            echo "<p>" . $found["Content"] . "</p>" . "<br>";
+                        }
+                    }
+
+                ?>
+
+                
+
             </div>
         </section>
 
