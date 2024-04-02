@@ -42,23 +42,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Start the session
             session_start();
             $_SESSION['email'] = $email;
+            $_SESSION['role'] = $role;
+            header("Location: 2FA.php");
 
             // Redirect based on user's role
-            switch ($role) {
-                case 'Internal Staff':
-                    header("Location: internalstaffHP.php");
-                    break;
-                case 'Consultant':
-                    header("Location: consultantsHP.php");
-                    break;
-                case 'Trainer':
-                    header("Location: trainerHP.php");
-                    break;
-                default:
-                    // Default redirection if role is not recognized
-                    header("Location: index.php");
-                    break;
-            }
+            // switch ($role) {
+            //     case 'Internal Staff':
+            //         header("Location: internalstaffHP.php");
+            //         break;
+            //     case 'Consultant':
+            //         header("Location: consultantsHP.php");
+            //         break;
+            //     case 'Trainer':
+            //         header("Location: trainerHP.php");
+            //         break;
+            //     default:
+            //         // Default redirection if role is not recognized
+            //         header("Location: index.php");
+            //         break;
+            // }
             exit();
         } else {
             // Invalid credentials, redirect back to the login page with an error message
