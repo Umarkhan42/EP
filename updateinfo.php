@@ -129,10 +129,10 @@ if ($user = $result->fetch_assoc()) {
                 <input type="text" name="postcode" placeholder="Enter your postcode"></input><br><br>
 
                 <label for="phone">Phone Number:</label><br>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br><br>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number"></input><br><br>
 
                 <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email"></input><br><br>
 
                 <input type="submit" value="Save Changes">
             </form>
