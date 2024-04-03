@@ -32,8 +32,8 @@ aside{
     background-color: #f9f9f9;
     height: 20rem;
     overflow: auto;
-    
-
+    background-color: lightgray;
+  
 }
 
 
@@ -61,6 +61,7 @@ aside{
     box-shadow: 0 4px 50px rgba(0, 0, 0, 0.46);
     background-color: #f9f9f9;
     overflow: auto;
+    background-color: lightgray;
 
 
 }
@@ -88,6 +89,7 @@ aside{
     box-shadow: 0 4px 50px rgba(0, 0, 0, 0.46);
     background-color: #f9f9f9;
     overflow: auto;
+    background-color: lightgray;
 
 }
 
@@ -120,6 +122,7 @@ aside{
     background-color: #f9f9f9;
     height: 20rem;
     overflow: auto;
+    background-color: lightgray;
 
 }
 

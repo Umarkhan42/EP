@@ -35,31 +35,7 @@ include 'db.php'; // Include your database connection script
                 </div>
             </a>
 
-            <div class="frame-wrapper">
-                <img
-                class=""
-                loading="lazy"
-                alt=""
-                src="./public/group-34.svg"
-                />
-            </div>
-            <div class="vector-wrapper">
-                <img
-                class=""
-                loading="lazy"
-                alt=""
-                src="./public/vector.svg"
-                />
-            </div>
-            <div class="messages-icon">
-                <img
-                class=""
-                loading="lazy"
-                alt=""
-                src="./public/group-33.svg"
-            />
-            </div>
-    
+            
     
             <div class="frame-container">
                 <img
@@ -69,14 +45,17 @@ include 'db.php'; // Include your database connection script
                 src="./public/group-32.svg"
                 />
             </div>
-            <div class="g1970-parent">
-                <img
-                class=""
-                loading="lazy"
-                alt=""
-                src="./public/g1970.svg"
-                />
-            </div>
+
+            <a href="timeoff.php">
+                <div class="g1970-parent">
+                    <img
+                    class=""
+                    loading="lazy"
+                    alt=""
+                    src="./public/g1970.svg"
+                    />
+                </div>
+            </a>
     
     
             <a href="Consultants.html">

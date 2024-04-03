@@ -19,65 +19,45 @@
 
         <aside>
             
-            <div class="icon">
-                <img 
-                class="" 
-                loading="lazy" 
-                alt="" 
-                src="./public/icons.png" />
-            </div>
-            <div class="icon">
-                <img
-                class=""
-                loading="lazy"
-                alt=""
-                src="./public/group34.png"
-                />
-            </div>
-            <div class="icon">
-                <img
-                class=""
-                loading="lazy"
-                alt=""
-                src="./public/vector.png"
-                />
-            </div>
-            <div class="icon">
-                <img
-                class=""
-                loading="lazy"
-                alt=""
-                src="./public/group33.png"
-            />
-            </div>
+            <a href="updateinfo.php">
+                <div class="icons-wrapper">
+                    <img 
+                    class="" 
+                    loading="lazy" 
+                    alt="" 
+                    src="./public/icons.svg" />
+                </div>
+            </a>
+
+
     
     
-            <div class="icon">
+            <div class="frame-container">
                 <img
                 class=""
                 loading="lazy"
                 alt=""
-                src="./public/group32.png"
-                />
-            </div>
-            <div class="icon">
-                <img
-                class=""
-                loading="lazy"
-                alt=""
-                src="./public/g1970.png"
+                src="./public/group-32.svg"
                 />
             </div>
     
-    
-            <div class="image-8-wrapper">
-                <img
-                class="image-8-icon"
-                loading="lazy"
-                alt=""
-                src="./public/image-8@2x.png"
-                />
-            </div>
+            <a href="employeeManagement.php">
+                <div class="image-8-wrapper">
+                    <img
+                    class="image-8-icon"
+                    loading="lazy"
+                    alt=""
+                    src="./public/image-8@2x.png"
+                    />
+                </div>
+            </a>
+            
+            <a href="internalStaffHP.php">
+                <div>
+                    <img src="./public/home.png" alt="">            
+                </div>
+            </a>
+              
               
         </aside>
 

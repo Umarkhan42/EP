@@ -8,7 +8,7 @@
     'aside form form logo'
     'aside form form logo'
     'aside footer footer logo';
-    grid-template-columns: 5% 40% 40% 5%;
+    grid-template-columns: 100px 40% 40% 5%;
 
     gap: 4rem;    
 }
@@ -17,17 +17,17 @@ body{
     margin-right: 3rem;
 }
 
+
 aside{
     grid-area: aside;
     background-color:#2b99ff;
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.46);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 40px;
-    height: 100vh;
-    width: 200px;
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.46);
+    height: 100%;
 }
 
 
@@ -57,10 +57,10 @@ header{
 
 .container1 {
     grid-area: form;
-    width: 60%;
+    width: 40%;
     height: auto;
     margin: 0 auto;
-    padding: 200px;
+    padding: 100px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: lightgray;
