@@ -37,14 +37,7 @@ include 'db.php'; // Include your database connection script
 
             
     
-            <div class="frame-container">
-                <img
-                class=""
-                loading="lazy"
-                alt=""
-                src="./public/group-32.svg"
-                />
-            </div>
+    
 
             <a href="timeoff.php">
                 <div class="g1970-parent">

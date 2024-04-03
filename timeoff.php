@@ -30,16 +30,7 @@
             </a>
 
 
-    
-    
-            <div class="frame-container">
-                <img
-                class=""
-                loading="lazy"
-                alt=""
-                src="./public/group-32.svg"
-                />
-            </div>
+
     
             <a href="employeeManagement.php">
                 <div class="image-8-wrapper">

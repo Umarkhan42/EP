@@ -54,13 +54,11 @@ if ($user = $result->fetch_assoc()) {
             </a>
             
 
-            <div class="frame-container">
-                <img class="" loading="lazy" alt="" src="./public/group-32.svg" />
-            </div>
-            <div class="g1970-parent">
-                <img class="" loading="lazy" alt="" src="./public/g1970.svg" />
-            </div>
-
+            <a href="timeoff.php">
+                <div class="g1970-parent">
+                    <img class="" loading="lazy" alt="" src="./public/g1970.svg" />
+                </div>
+            </a>
             <div class="home2">
                 <?php 
                     switch ($user['Role']) {
