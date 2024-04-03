@@ -1,21 +1,22 @@
 # EP
 # 1. Installing Xampp on Windows:
-# Download XAMPP from the official website:
-# Run the installer and follow the on-screen instructions.
-# After installation, launch XAMPP Control Panel.
-# Start the Apache and MySQL services by clicking on the Start button next to each service.
+-Download XAMPP from the official website:
+-Run the installer and follow the on-screen instructions.
+-After installation, launch XAMPP Control Panel.
+-Start the Apache and MySQL services by clicking on the Start button next to each service.
 
 # 2.Accessing phpMyAdmin
-# Open your web browser.
-# Type localhost/phpmyadmin in the address bar and hit Enter.
-# You should now see the phpMyAdmin dashboard.
+-Open your web browser.
+-Type localhost/phpmyadmin in the address bar and hit Enter.
+-You should now see the phpMyAdmin dashboard.
 
 # 3.Creating a Database and Table
-# Firstly, in phpMyAdmin, click on the Databases tab.
-# Enter a name for your database in the Create database field and click Create.
-# Select the newly created database from the left sidebar.
-# Click on the "SQL" tab.
-# Copy and paste the following SQL query to create a table:
+-Firstly, in phpMyAdmin, click on the Databases tab.
+-Enter a name for your database in the Create database field and click Create.
+-Select the newly created database from the left sidebar.
+-Click on the "SQL" tab.
+-Copy and paste the following SQL query to create a table:
+
 # sql
 CREATE TABLE Employees (
 ID INT AUTO_INCREMENT PRIMARY KEY,
@@ -31,7 +32,7 @@ Password VARCHAR(255)
 # Click Go to execute the query.
 
 # 4.Insert dummy data/values
-# In the SQL tab, copy and paste the following SQL query to insert dummy data into the Employees table:
+-In the SQL tab, copy and paste the following SQL query to insert dummy data into the Employees table:
 # sql
 INSERT INTO Employees (Name, DoB, Address, Postcode, Phone, Email, Role, Password) VALUES
 ('John Doe', '1990-01-01', '123 Main St', '12345', '773746966', 'john@example.com', 'Internal Staff', 'AAAAbbbb123'),
