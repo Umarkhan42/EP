@@ -20,7 +20,6 @@ if ($user = $result->fetch_assoc()) {
     // User data is now in $user array
 } else {
     echo "User not found.";
-    // Consider handling this case, maybe redirect to an error page or logout
 }
 ?>
 
@@ -72,7 +71,6 @@ if ($user = $result->fetch_assoc()) {
                             echo '<a href="trainerHP.php"><img src="./public/home.png" alt=""></a>';
                             break;
                         default:
-                            // Default action if role is not recognized
                             echo '<a href="index.php"><img src="./public/home.png" alt=""></a>';
                             break;
                     }
@@ -87,22 +85,22 @@ if ($user = $result->fetch_assoc()) {
                 <h3>Current Information</h3>
                 <ul>
                     <li><strong>Name:</strong>
-                        <?php echo htmlspecialchars($user['Name']); ?>
+                        <?php echo $user['Name']; ?>
                     </li>
                     <li><strong>Date of Birth:</strong>
-                        <?php echo htmlspecialchars($user['DoB']); ?>
+                        <?php echo $user['DoB']; ?>
                     </li>
                     <li><strong>Address:</strong>
-                        <?php echo htmlspecialchars($user['Address']); ?>
+                        <?php echo $user['Address']; ?>
                     </li>
                     <li><strong>Postcode:</strong>
-                        <?php echo htmlspecialchars($user['Postcode']); ?>
+                        <?php echo $user['Postcode']; ?>
                     </li>
                     <li><strong>Phone Number:</strong>
-                        <?php echo htmlspecialchars($user['Phone']); ?>
+                        <?php echo  $user['Phone']; ?>
                     </li>
                     <li><strong>Email:</strong>
-                        <?php echo htmlspecialchars($user['Email']); ?>
+                        <?php echo $user['Email']; ?>
                     </li>
                 </ul>
             </div>

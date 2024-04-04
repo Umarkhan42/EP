@@ -26,9 +26,8 @@ if (isset ($_POST['name'], $_POST['dob'], $_POST['address'], $_POST['postcode'],
     if ($stmt->execute()) {
         // Update was successful
         $_SESSION['email'] = $newEmail; // Update the email in the session if it was changed
-        header('Location: updateinfo.php?success=1'); // Redirect with a success message
+        header('Location: updateinfo.php'); // Redirect with a success message
     } else {
-        // Handle errors, e.g., print a message or log it
         echo "Error: " . $stmt->error;
     }
 

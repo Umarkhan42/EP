@@ -1,10 +1,17 @@
+<?php
+
+session_start();
+include 'db.php'; // Include your database connection script
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="cssFolder/reset.css">
     <link rel="stylesheet" type="text/css" href="timeoff.css">
     <link rel="stylesheet" type="text/css" href="global.css">
 
@@ -31,7 +38,7 @@
 
 
 
-    
+<!--     
             <a href="employeeManagement.php">
                 <div class="image-8-wrapper">
                     <img
@@ -41,13 +48,27 @@
                     src="./public/image-8@2x.png"
                     />
                 </div>
-            </a>
+            </a> -->
             
-            <a href="internalStaffHP.php">
-                <div>
-                    <img src="./public/home.png" alt="">            
-                </div>
-            </a>
+            <div class="home2">
+                <?php 
+                    switch ($_SESSION['role']) {
+                        case 'Internal Staff':
+                            echo '<a href="internalstaffHP.php"><img src="./public/home.png" alt=""></a>';
+                            break;
+                        case 'Consultant':
+                            echo '<a href="consultantsHP.php"><img src="./public/home.png" alt=""></a>';
+                            break;
+                        case 'Trainer':
+                            echo '<a href="trainerHP.php"><img src="./public/home.png" alt=""></a>';
+                            break;
+                        default:
+                            // Default action if role is not recognized
+                            echo '<a href="index.php"><img src="./public/home.png" alt=""></a>';
+                            break;
+                    }
+                ?>
+            </div>
               
               
         </aside>
