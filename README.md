@@ -12,7 +12,7 @@ You should now see the phpMyAdmin dashboard.
 
 # 3.Creating a Database and Table
 Firstly, in phpMyAdmin, click on the Databases tab.
-Enter a name for your database in the Create database field and click Create.
+Enter 'fdmlogin' for your database name in the Create database field and click Create.
 Select the newly created database from the left sidebar.
 Click on the "SQL" tab.
 Copy and paste the following SQL query to create a table:
