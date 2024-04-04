@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="cssFolder/reset.css">
     <link rel="stylesheet" type="text/css" href="cssFolder/trainerManagement.css">
-    <link rel="stylesheet" type="text/css" href="cssFolder/global.css">    
+    <link rel="stylesheet" type="text/css" href="cssFolder/global.css">   
+    <link rel="stylesheet" type = "js" href="trainerScript.js">  
     <title>Document</title>
 </head>
 <body>
@@ -63,19 +64,22 @@
     
 
         <section class="update">
-            <form id="assignForm" action="update.php" method="POST">
-                <label for="Group/User">Group/User:</label><br>
-                <input type="text" id="Group/User" name="Group/User" placeholder="Enter Group / User"><br><br>
+            <form id="assignForm" action="assignskilldev.php" method="POST" onsubmit = "return validateForm()">
+                <label for="Group_User">Group/User:</label><br>
+                <input type="text" id="Group_User" name="Group_User" placeholder="Enter Group / User" required><br><br>
                 
                 <label for="Task">Task:</label><br>
-                <input type="text" id="Task" name="Task"><br><br>
+                <input type="text" id="Task" name="Task" required><br><br>
+
+                <label for="CompletionDate">Completion Date:</label><br>
+                <input type="date" id="CompletionDate" name="CompletionDate" required><br><br>
                 
                 <input type="submit" value="Assign">
             </form>
 
             <div class="gap"></div>
 
-            <form id="assignForm2" action="update.php" method="POST">
+            <form id="assignForm2" action="assignskilldev.php" method="POST">
                 <label for="feedback">Feedback</label><br>
                 <textarea type="text" id="feedback" name="feedback"></textarea>
                 
