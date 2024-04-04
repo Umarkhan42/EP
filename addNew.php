@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'db.php'; // Ensure you have included the database connection
+require 'db.php'; 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $name = $_POST["name"];
@@ -18,10 +18,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Execute the statement
     if ($stmt->execute()) {
         // Update was successful
-        header('Location: employeeManagement.php?success=1'); // Redirect with a success message
+        header('Location: employeeManagement.php'); 
 
     } else {
-        // Handle errors, e.g., print a message or log it
         echo "Error: " . $stmt->error;
     }
     $stmt->close();

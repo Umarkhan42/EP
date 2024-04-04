@@ -1,3 +1,8 @@
+
+<?php
+session_start();
+include 'db.php'; // Include your database connection script
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,15 +55,33 @@
 
 
         <section class="current">
-            <div class="approve">
-                <h3>Approve Annual leave</h3>
 
-            </div>
-            <div class="gap"></div>
+            <div class="parent">
+            <h3>Approve Annual leave</h3>
 
-            <div class="manage">
-                <h3> Manage recruitment</h3>
+                <div class="approve-content">
+                <?php
+                    $sql = "SELECT * FROM request";
+                    $valid = mysqli_query($conn, $sql);
+                    $index = 1; // Start with an index for paragraph IDs
+                    if (mysqli_num_rows($valid) > 0){
+                        while ($found = mysqli_fetch_assoc($valid)) {
+                            $paragraphId = "paragraph" . $index; // Generate unique paragraph ID
+                            echo "<br>";
+                            echo "<p id='$paragraphId'>" . $found["name"] . "<br>". $found["reason"] . "<br>" . $found["type"]. "<br>". $found["start"] ."<br>".  $found["end"] . "</p>";
+                            echo "<button onclick='hideParagraphAndButton(\"$paragraphId\", this)'>Hide Paragraph</button>"; // Use unique paragraph ID
+                            $index++; // Increment index for next paragraph
+
+                        }
+                    }
+                ?>
+
+
+
+                </div>
             </div>
+
+
 
             <div class="gap"></div>
 
@@ -113,6 +136,17 @@
         <div class="blank2"></div>
 
     </div>
-    
+<script>
+    function hideParagraphAndButton(paragraphId, button) {
+        var paragraph = document.getElementById(paragraphId);
+        if (paragraph) {
+            paragraph.style.display = "none";
+        }
+        if (button) {
+            button.style.display = "none";
+        }
+    }
+</script>
 </body>
+
 </html>

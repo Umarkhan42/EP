@@ -81,7 +81,6 @@ include 'db.php'; // Include your database connection script
                             echo "<p>" . $found["Content"] . "</p>" . "<br>";
                         }
                     }
-
                 ?>
 
                 
