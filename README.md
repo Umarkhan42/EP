@@ -41,3 +41,5 @@ INSERT INTO Employees (Name, DoB, Address, Postcode, Phone, Email, Role, Passwor
 # Click Go to execute the query.
 
 # Now when accessing the website only with the valid credentials can a user be logged in to the system
+
+# The steps above can be repeated for storing dummy data for announcements, skill development tasks and many other use cases which requires a database to store key information. FDM has a large workforce with over 5000 employees hence why we have decided to make use of a database to store user information in a secure and safe location that can be constantly updated by authorised personnel.
