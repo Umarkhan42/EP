@@ -11,7 +11,8 @@ include 'db.php'; // Include your database connection script
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="cssFolder/reset.css">
     <link rel="stylesheet" type="text/css" href="cssFolder/global.css">  
-    <link rel="stylesheet" type="text/css" href="cssFolder/mainpage.css">  
+    <link rel="stylesheet" type="text/css" href="cssFolder/mainpage.css"> 
+    <script src="script.js" defer></script> 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -138,6 +139,26 @@ include 'db.php'; // Include your database connection script
                 <p>FAQ</p>
             </div>
         </section>
+        <button class="chatbot-toggler">
+            <span class="material-symbols-rounded"></span>
+            <span class="material-symbols-outlined"></span>
+          </button>
+          <div class="chatbot">
+            <header>
+              <h2>Chatbot</h2>
+              <span class="close-btn material-symbols-outlined">close</span>
+            </header>
+            <ul class="chatbox">
+              <li class="chat incoming">
+                <span class="material-symbols-outlined">star.jpg</span>
+                <p>Hi there 👋<br>How can I help you today?</p>
+              </li>
+            </ul>
+            <div class="chat-input">
+              <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+              <span id="send-btn" class="material-symbols-rounded">send</span>
+            </div>
+          </div>
     </div>
 </body>
 </html>
