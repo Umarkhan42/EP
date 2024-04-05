@@ -10,10 +10,9 @@ include 'db.php'; // Include your database connection script
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="cssFolder/reset.css">
-    <link rel="stylesheet" type="text/css" href="cssFolder/mainpage.css">
-    <link rel="stylesheet" type="text/css" href="cssFolder/global.css">
-    <script src="script.js" defer></script>
-
+    <link rel="stylesheet" type="text/css" href="cssFolder/global.css">  
+    <link rel="stylesheet" type="text/css" href="cssFolder/mainpage.css">  
+	<script src="todoscript.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -35,33 +34,60 @@ include 'db.php'; // Include your database connection script
                 </div>
             </a>
 
-            
+            <div class="frame-wrapper">
+                <img
+                class=""
+                loading="lazy"
+                alt=""
+                src="./public/group-34.svg"
+                />
+            </div>
+            <div class="vector-wrapper">
+                <img
+                class=""
+                loading="lazy"
+                alt=""
+                src="./public/vector.svg"
+                />
+            </div>
+            <div class="messages-icon">
+                <img
+                class=""
+                loading="lazy"
+                alt=""
+                src="./public/group-33.svg"
+            />
+            </div>
     
     
+            <div class="frame-container">
+                <img
+                class=""
+                loading="lazy"
+                alt=""
+                src="./public/group-32.svg"
+                />
+            </div>
+            <div class="g1970-parent">
+                <img
+                class=""
+                loading="lazy"
+                alt=""
+                src="./public/g1970.svg"
+                />
+            </div>
+    
+    <a href="employeeManagement.php">
+        <div class="image-8-wrapper">
+            <img
+            class="image-8-icon"
+            loading="lazy"
+            alt=""
+            src="./public/image-8@2x.png"
+            />
+        </div>
+    </a>
 
-            <a href="timeoff.php">
-                <div class="g1970-parent">
-                    <img
-                    class=""
-                    loading="lazy"
-                    alt=""
-                    src="./public/g1970.svg"
-                    />
-                </div>
-            </a>
-    
-    
-            <a href="Consultants.html">
-                <div class="image-8-wrapper">
-                    <img
-                    class="image-8-icon"
-                    loading="lazy"
-                    alt=""
-                    src="./public/image-9@2x.png"
-                    />
-                </div>
-            </a>
-           
               
         </aside>
 
@@ -89,6 +115,9 @@ include 'db.php'; // Include your database connection script
                     }
 
                 ?>
+
+                
+
             </div>
         </section>
 
@@ -126,37 +155,22 @@ include 'db.php'; // Include your database connection script
                 <h1 class="todo-header">To Do <img class="toDo-icon" alt="" src="./public/toDo.png"/></h1><br>
             </div>
 
-            <form action="addToDoConsultants.php" method="POST">
-                <div>
-                    <input type="text" name="list" class="form-control">
-                </div>
-                <div>
-                    <button class="addButton">Add</button>
-                </div>
-            </form>
-            
             <?php
+            $id = $_GET['ID'];
             include "config.php";
-            $rawData = mysqli_query($con, "select * from todoconsultants");
+            $Rdata = mysqli_query($con, "select * from todointernalstaff where Id = $id");
+            $data = mysqli_fetch_array($Rdata);
             ?>
-            
-            <div>
-                <table class="table">
-                    <tbody>
-                        <?php
-                            while($row = mysqli_fetch_array($rawData)){
-                        ?>
-                        <tr>
-                            <td><?php echo $row['list'] ?></td>
-                            <td><a href="deleteToDoConsultants.php ? ID=<?php echo $row['Id'] ?>">Delete</a></td>
-                            <td><a href="updateToDoConsultants.php ? ID=<?php echo $row['Id'] ?>">Update</a></td>
-                        </tr>
-                        <?php
-                        }
-                        ?>
-                    </tbody>
-                </table>
-            </div>
+
+            <form action="updateToDoInternalStaff1.php" method="POST">
+                <div>
+                    <input type="text" value="<?php echo $data['list'] ?>" name="list" class="form-control">
+                </div>
+                <div>
+                    <button class="updateButton">Update</button>
+                    <input type="hidden" name="id" value="<?php echo $data['Id'] ?>">
+                </div>
+            </form>       
         </section>
 
         <section class="deskSupport">
@@ -164,31 +178,11 @@ include 'db.php'; // Include your database connection script
                 <h1 class="deskSupport-header">Support Desk</h1><br>
                 <div>
                     <label for="help"></label>
-                    <input type="text" placeholder="How can we help?" id="help" name="help">
+                    <input type="hidden" placeholder="How can we help?" id="help" name="help">
                 </div>
                 <p>FAQ</p>
             </div>
         </section>
-        <button class="chatbot-toggler">
-            <span class="material-symbols-rounded"></span>
-            <span class="material-symbols-outlined"></span>
-          </button>
-          <div class="chatbot">
-            <header>
-              <h2>Chatbot</h2>
-              <span class="close-btn material-symbols-outlined">close</span>
-            </header>
-            <ul class="chatbox">
-              <li class="chat incoming">
-                <span class="material-symbols-outlined">star.jpg</span>
-                <p>Hi there 👋<br>How can I help you today?</p>
-              </li>
-            </ul>
-            <div class="chat-input">
-              <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
-              <span id="send-btn" class="material-symbols-rounded">send</span>
-            </div>
-          </div>
     </div>
 </body>
 </html>

@@ -70,6 +70,7 @@ aside{
     color: #2b99ff;
     font-size: 2rem;
     font-family: "Inter", sans-serif;
+    display: flex;
 }
 
 .todo-content{
@@ -79,6 +80,12 @@ aside{
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
+}
+
+.toDo-icon{
+  display: block;
+  width: 6%;
+  padding-left: 1%;
 }
 
 .deskSupport{

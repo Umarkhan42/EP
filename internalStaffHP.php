@@ -120,12 +120,39 @@ include 'db.php'; // Include your database connection script
 
         <section class="todo">
             <div class="todo-content">
-                <h1 class="todo-header">To Do</h1><br>
-                <p>Attend 9:00am meeting</p>
-                <p>Complete Training Programme</p>
-                <p>Emails</p>
-                <p>Organise call with HR</p>
-                <p>Attend 9:00am meeting</p>
+                <h1 class="todo-header">To Do <img class="toDo-icon" alt="" src="./public/toDo.png"/></h1><br>
+            </div>
+
+            <form action="addToDoInternalStaff.php" method="POST">
+                <div>
+                    <input type="text" name="list" class="form-control">
+                </div>
+                <div>
+                    <button class="addButton">Add</button>
+                </div>
+            </form>
+            
+            <?php
+            include "config.php";
+            $rawData = mysqli_query($con, "select * from todointernalstaff");
+            ?>
+            
+            <div>
+                <table class="table">
+                    <tbody>
+                        <?php
+                            while($row = mysqli_fetch_array($rawData)){
+                        ?>
+                        <tr>
+                            <td><?php echo $row['list'] ?></td>
+                            <td><a href="deleteToDoInternalStaff.php ? ID=<?php echo $row['Id'] ?>">Delete</a></td>
+                            <td><a href="updateToDoInternalStaff.php ? ID=<?php echo $row['Id'] ?>">Update</a></td>
+                        </tr>
+                        <?php
+                        }
+                        ?>
+                    </tbody>
+                </table>
             </div>
         </section>
 
