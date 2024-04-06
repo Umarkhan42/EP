@@ -147,7 +147,6 @@ include 'db.php'; // Include your database connection script
                         <tr>
                             <td><?php echo $row['list'] ?></td>
                             <td><a href="deleteToDoTrainer.php ? ID=<?php echo $row['Id'] ?>">Delete</a></td>
-                            <td><a href="updateToDoTrainer.php ? ID=<?php echo $row['Id'] ?>">Update</a></td>
                         </tr>
                         <?php
                         }
