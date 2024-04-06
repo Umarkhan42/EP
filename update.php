@@ -9,7 +9,7 @@ if (!isset ($_SESSION['email'])) {
 }
 
 // Check if the form data is set
-if (isset ($_POST['name'], $_POST['dob'], $_POST['address'], $_POST['postcode'], $_POST['phone'], $_POST['email'])) {
+if (isset ($_POST['name'], $_POST['dob'], $_POST['address'], $_POST['postcode'], $_POST['phone'], $_POST['email'], $_POST['password'])) {
     $email = $_SESSION['email']; // The user's current email to identify the record
     $newEmail = $_POST['email']; // New email from the form
     $name = $_POST['name'];
@@ -17,11 +17,12 @@ if (isset ($_POST['name'], $_POST['dob'], $_POST['address'], $_POST['postcode'],
     $address = $_POST['address'];
     $postcode = $_POST['postcode'];
     $phone = $_POST['phone'];
+    $password = $_POST['password'];
 
     // Prepare an UPDATE statement to update the user's details
-    $query = "UPDATE Employees SET Name=?, DoB=?, Address=?, Postcode=?, Phone=?, Email=? WHERE Email=?";
+    $query = "UPDATE Employees SET Name=?, DoB=?, Address=?, Postcode=?, Phone=?, Email=?, Password=? WHERE Email=?";
     $stmt = $conn->prepare($query);
-    $stmt->bind_param("sssssss", $name, $dob, $address, $postcode, $phone, $newEmail, $email);
+    $stmt->bind_param("ssssssss", $name, $dob, $address, $postcode, $phone, $newEmail, $password, $email);
 
     if ($stmt->execute()) {
         // Update was successful

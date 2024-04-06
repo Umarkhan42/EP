@@ -102,6 +102,9 @@ if ($user = $result->fetch_assoc()) {
                     <li><strong>Email:</strong>
                         <?php echo $user['Email']; ?>
                     </li>
+                    <li><strong>Password:</strong>
+                        <?php echo $user['Password']; ?>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -129,6 +132,9 @@ if ($user = $result->fetch_assoc()) {
 
                 <label for="email">Email:</label><br>
                 <input type="email" id="email" name="email" placeholder="Enter your email"></input><br><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" placeholder="Enter your new password"></input><br><br>
 
                 <input type="submit" value="Save Changes">
             </form>
