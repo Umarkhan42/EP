@@ -14,7 +14,7 @@ include 'db.php'; // Make sure to include your database connection settings
     <script defer src="authenticator.js"></script>
 </head>
 <body>
-    <img src="assets/logo.png" alt="Logo" class="logo"> 
+    <img src="assets\FDM_Group_Logo.png" alt="Logo" class="logo"> 
     <div class="container">
         <h1>Two-Factor Authentication</h1>
         <p>Enter your FDM email</p>

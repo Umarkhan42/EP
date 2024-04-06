@@ -158,15 +158,26 @@ include 'db.php'; // Include your database connection script
         </section>
 
         <section class="deskSupport">
-            <div class="deskSupport-content">
-                <h1 class="deskSupport-header">Support Desk</h1><br>
-                <div>
-                    <label for="help"></label>
-                    <input type="text" placeholder="How can we help?" id="help" name="help">
+                <div class="deskSupport-content">
+                    <h1 class="deskSupport-header">Contact Us</h1><br>
+                    <form id="contactForm">
+                        <div>
+                            <label for="username">Name:</label>
+                            <input type="text" placeholder="Your Name" id="username" name="username"> 
+                        </div>
+                        <div>
+                            <label for="issue">Describe your issue:</label>
+                            <textarea id="issue" name="issue" rows="4" cols="50" placeholder="Please describe your issue in detail."></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
                 </div>
-                <p>FAQ</p>
-            </div>
         </section>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script src="supportDesk.js"></script>
+
         <button class="chatbot-toggler">
             <span class="material-symbols-rounded"></span>
             <span class="material-symbols-outlined"></span>
@@ -178,7 +189,9 @@ include 'db.php'; // Include your database connection script
             </header>
             <ul class="chatbox">
               <li class="chat incoming">
-                <span class="material-symbols-outlined">star.jpg</span>
+                <span class="material-symbols-outlined">
+                    <img src="assets\FDM_Group_Logo.png" alt="Logo" class="logo" width = 40px height = 40px> 
+                </span>
                 <p>Hi there 👋<br>How can I help you today?</p>
               </li>
             </ul>

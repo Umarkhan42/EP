@@ -41,7 +41,17 @@ const inputInitHeight = chatInput.scrollHeight;
 const createChatLi = (message, className) => {
     const chatLi = document.createElement("li");
     chatLi.classList.add("chat", className);
-    let chatContent = className === "outgoing" ? `<p>${message}</p>` : `<span class="material-symbols-outlined">star.jpg</span><p>${message}</p>`;
+    let chatContent;
+    if (className === "outgoing") {
+        chatContent = `<p>${message}</p>`;
+    } else {
+        chatContent = `
+            <span class="material-symbols-outlined">
+                <img src="assets/FDM_Group_Logo.png" alt="Logo" class="logo" width="40" height="40"> 
+            </span>
+        <p>${message}</p>`;
+}
+
     chatLi.innerHTML = chatContent;
     return chatLi;
 }

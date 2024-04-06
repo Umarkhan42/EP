@@ -28,31 +28,6 @@ const publicKey = '6CAa8rXRoiBxmNaJe';
 
 emailjs.init(publicKey);
 
-// const sendCodeButton = document.querySelector('button');
-
-// sendCodeButton.addEventListener('click', (e) => 
-// {
-    
-//     const generatedCode = generateRandomCode();
-
-//     // Store the generated code in a data attribute of the button
-//     sendCodeButton.setAttribute('data-code', generatedCode);
-
-//     const inputData = 
-//     {
-//         emailInput: email.value, 
-//         code: generatedCode, // Pass the generated code to the email input field
-//     };
-
-//     emailjs.send(serviceID, templateID, inputData).then(() => 
-//     {
-//         email.value = '';
-//         console.log('Success');
-//     });
-
-//     startTimer(duration);
-// });
-
 function sendCode()
 {
     
