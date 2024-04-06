@@ -14,7 +14,7 @@ body{
 
 aside{
     grid-area: aside;
-    background-color:#2b99ff;
+    background-color:#c0ff48;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +48,7 @@ aside{
 }
 
 .announcements-header{
-    color: #2b99ff;
+    color: #c0ff48;
     font-size: 2rem;
     font-family: "Inter", sans-serif;
 }
@@ -67,7 +67,7 @@ aside{
 }
 
 .todo-header{
-    color: #2b99ff;
+    color: #c0ff48;
     font-size: 2rem;
     font-family: "Inter", sans-serif;
     display: flex;
@@ -107,7 +107,7 @@ aside{
 }
 
 .deskSupport-header{
-    color: #2b99ff;
+    color: #c0ff48;
     font-size: 2rem;
     font-family: "Inter", sans-serif;
 }
@@ -134,7 +134,7 @@ aside{
 }
 
 .projectManagement-header{
-    color: #2b99ff;
+    color: #c0ff48;
     font-size: 2rem;
     font-family: "Inter", sans-serif;
 }

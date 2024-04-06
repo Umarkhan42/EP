@@ -29,8 +29,5 @@ include 'db.php'; // Make sure to include your database connection settings
         <p id="resendMessage">Didn't receive the code? <a href="#" onclick="resendCode()">Resend</a></p>
         <p id="timer"></p>
     </div>
-
-
-
 </body>
 </html>

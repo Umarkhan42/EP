@@ -54,8 +54,8 @@ input[type="text"] {
 
 button {
     padding: 20px 40px; 
-    background-color: #2a99ff;
-    color: #fff;
+    background-color: #c0ff48;
+    color: black;
     border: none;
     border-radius: 10px; 
     cursor: pointer;
@@ -63,7 +63,7 @@ button {
 }
 
 button:hover {
-    background-color: darkblue;
+    background-color: white;
 }
 
 .error-message {
@@ -78,7 +78,7 @@ button:hover {
 }
 
 #resendMessage a {
-    color: #2a99ff;
+    color: #c0ff48;
     text-decoration: none;
 }
 

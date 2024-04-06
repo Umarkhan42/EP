@@ -49,16 +49,15 @@
 
         </div>
         <div class="ipad-image">
-          <img class="image-1" src="./assets/image-1@2x.png" alt="">
+          <img class="image-1" src="./assets/image-1@2xgreen.png" alt="">
         </div>
       </div>
 
       <div class="container3">
 
-        <img src="./assets/image-4@2x.png" alt="">
-        <img src="./assets/image-3@2x.png" alt="">
+        <img src="./assets/image-4@2xgreen.png" alt="">
+        <img src="./assets/image-3@2xgreen.png" alt="">
       </div>
     </div>
   </body>
 </html>
-

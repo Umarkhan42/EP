@@ -12,8 +12,8 @@ include 'db.php'; // Include your database connection script
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="cssFolder/reset.css">
-    <link rel="stylesheet" type="text/css" href="timeoff.css">
-    <link rel="stylesheet" type="text/css" href="global.css">
+    <link rel="stylesheet" type="text/css" href="cssFolder/timeoff.css">
+    <link rel="stylesheet" type="text/css" href="cssFolder/global.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
