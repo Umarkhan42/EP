@@ -93,13 +93,13 @@ include 'db.php'; // Include your database connection script
         <section class="projectManagement">
             <div class="projectManagement-content">
                 <h1 class="projectManagement-header">Project Management</h1><br>
-                <p>Select Region / Global Project</p>
+                <p class="p1">Select Region / Global Project</p>
 
                 <form action="post">
                     <label for="selectproject"></label>
                     <input type="text" id="selectproject" name="selectproject">
                     
-                    <p>Rate project</p>
+                    <p class="p1"><br>Rate project</p>
 
                     <img
                     class="star-icon"
@@ -108,10 +108,10 @@ include 'db.php'; // Include your database connection script
                     src="./public/star-1.svg"
                     />
 
-                    <p>Review project</p>
+                    <p class="p1"><br>Review project</p>
 
                     <label for="reviewproject"></label>
-                    <textarea type="text" id="reviewproject" name="reviewproject"></textarea><br>
+                    <textarea type="text" id="reviewproject" name="reviewproject"></textarea><br><br>
                   
                     <input type="submit" value="Submit">
                     <input type="reset" value="Reset">
@@ -122,14 +122,13 @@ include 'db.php'; // Include your database connection script
         <section class="todo">
             <div class="todo-content">
                 <h1 class="todo-header">To Do <img class="toDo-icon" alt="" src="./public/toDo.png"/></h1><br>
-            </div>
 
-            <form action="addToDoInternalStaff.php" method="POST">
+                <form action="addToDoInternalStaff.php" method="POST">
                 <div>
                     <input type="text" name="list" class="form-control">
                 </div>
                 <div>
-                    <button class="addButton">Add</button>
+                    <button class="addButton">Add</button><br>
                 </div>
             </form>
             
@@ -145,14 +144,15 @@ include 'db.php'; // Include your database connection script
                             while($row = mysqli_fetch_array($rawData)){
                         ?>
                         <tr>
-                            <td><?php echo $row['list'] ?></td>
-                            <td><a href="deleteToDoInternalStaff.php ? ID=<?php echo $row['Id'] ?>">Delete</a></td>
+                            <td class="list"><?php echo $row['list'] ?></td>
+                            <td class="delete"><a href="deleteToDoInternalStaff.php ? ID=<?php echo $row['Id'] ?>">Delete</a></td>
                         </tr>
                         <?php
                         }
                         ?>
                     </tbody>
                 </table>
+            </div>
             </div>
         </section>
 
@@ -162,14 +162,14 @@ include 'db.php'; // Include your database connection script
                     <form id="contactForm">
                         <div>
                             <label for="username">Name:</label>
-                            <input type="text" placeholder="Your Name" id="username" name="username"> 
+                            <input type="text" placeholder="Your Name" id="username" name="username">
                         </div>
                         <div>
-                            <label for="issue">Describe your issue:</label>
+                            <br><label for="issue">Describe your issue:</label><br>
                             <textarea id="issue" name="issue" rows="4" cols="50" placeholder="Please describe your issue in detail."></textarea>
                         </div>
                         <div>
-                            <button type="submit">Send</button>
+                            <br><button type="submit" id="send-btn">Send</button>
                         </div>
                     </form>
                 </div>

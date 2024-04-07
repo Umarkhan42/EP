@@ -1,3 +1,7 @@
+*{
+  font-family: "Inter", sans-serif;
+}
+
 .container{
     display: grid;
     grid-template-areas: 
@@ -48,9 +52,8 @@ aside{
 }
 
 .announcements-header{
-    color: #c0ff48;
+    color: #1E1E1E;
     font-size: 2rem;
-    font-family: "Inter", sans-serif;
 }
 
 
@@ -67,7 +70,7 @@ aside{
 }
 
 .todo-header{
-    color: #c0ff48;
+    color: #1E1E1E;
     font-size: 2rem;
     font-family: "Inter", sans-serif;
     display: flex;
@@ -107,9 +110,8 @@ aside{
 }
 
 .deskSupport-header{
-    color: #c0ff48;
+    color: #1E1E1E;
     font-size: 2rem;
-    font-family: "Inter", sans-serif;
 }
 
 .deskSupport-content{
@@ -134,9 +136,8 @@ aside{
 }
 
 .projectManagement-header{
-    color: #c0ff48;
+    color: #1E1E1E;
     font-size: 2rem;
-    font-family: "Inter", sans-serif;
 }
 
 .projectManagement-content{
@@ -149,14 +150,13 @@ aside{
 }
 
 #selectproject, select {
-    border-radius: 25px;
-    width: 190px;
+    width: 220px;
 }
   
 #reviewproject, select {
-    border-radius: 25px;
+    border-radius: 5px;
     height: 100px;
-    width: 190px;
+    width: 220px;
     outline: 1px solid black; 
 }
 
@@ -358,3 +358,123 @@ header h2 {
     }
   }
   
+input[type="submit"] {
+  font-size: 15px;
+  width: 8%;
+  border: 1px solid rgb(116, 116, 116);
+  border-radius: 4px;
+  text-align: center;
+  background-color: #c0ff48;
+  color: black;
+  cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: white;
+  }
+
+  input[type="reset"] {
+    font-size: 15px;
+      width: 6%;
+      border: 1px solid rgb(116, 116, 116);
+      border-radius: 4px;
+      text-align: center;
+    }
+    
+    input[type="reset"] {
+      background-color: #EFEFEF;
+      color: black;
+      cursor: pointer;
+    }
+    
+    input[type="reset"]:hover {
+      background-color: white;
+    }
+
+.p1 {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+input[type="text"] {
+  border-radius: 5px;
+}
+
+#issue {
+  border-radius: 5px;
+}
+
+.addButton {
+  margin-left: 10%;
+  font-size: 15px;
+  width: 44px;
+  display: flex;
+  position: absolute;
+  border: 1px solid rgb(116, 116, 116);
+  border-radius: 5px;
+  text-align: center;
+  background-color: #c0ff48;
+  color: black;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: white;
+}
+
+.form-control {
+  position: absolute;
+}
+
+.list {
+  display: list-item;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+.delete a {
+  display: inline-block;
+  font-size: 15px;
+  width: 60px;
+  border: 1px solid rgb(116, 116, 116);
+  border-radius: 4px;
+  text-align: center;
+  background-color: #EFEFEF;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.delete a:hover {
+  background-color: white;
+}
+
+label[for="username"] {
+  font-weight: bold;
+}
+
+label[for="issue"] {
+  font-weight: bold;
+}
+
+#issue {
+  margin-top: 5px;
+  border-radius: 5px;
+  outline: 1px solid black; 
+}
+
+#send-btn {
+  font-size: 15px;
+  width: 50px;
+  border: 1px solid rgb(116, 116, 116);
+  border-radius: 5px;
+  text-align: center;
+  background-color: #c0ff48;
+  color: black;
+  cursor: pointer;
+}
+
+#send-btn:hover {
+  background-color: white;
+}
