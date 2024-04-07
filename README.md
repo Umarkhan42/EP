@@ -83,5 +83,5 @@ VALUES ('Alex Scott', '2004-06-02', '123 hopestat', 'E1 4NX', '07122983745', 'al
 
 # Now when accessing the website only with the valid credentials can a user be logged in to the system
 
-# 5. Importnace of Using a Database
+# 5. Importance of Using a Database
 FDM has a large workforce with over 5000 employees hence why we have decided to make use of a database to store user information in a secure and safe location that can be constantly updated by authorised personnel.
