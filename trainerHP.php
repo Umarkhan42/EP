@@ -181,7 +181,7 @@ include 'db.php'; // Include your database connection script
             <span class="material-symbols-rounded"></span>
             <img src="assets/whitechatbot-removebg-preview.png" alt="Chatbot Logo" width= 40px height = 40px>
             <span class="material-symbols-outlined"></span>
-          </button>
+        </button>
           <div class="chatbot">
             <header>
               <h2>Chatbot</h2>
@@ -189,7 +189,7 @@ include 'db.php'; // Include your database connection script
             </header>
             <ul class="chatbox">
               <li class="chat incoming">
-              <span class="material-symbols-outlined">
+                <span class="material-symbols-outlined">
                     <img src="assets\FDM_Group_Logo.png" alt="Logo" class="logo" width = 40px height = 40px> 
                 </span>
                 <p>Hi there 👋<br>How can I help you today?</p>
@@ -197,7 +197,7 @@ include 'db.php'; // Include your database connection script
             </ul>
             <div class="chat-input">
               <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
-              <span id="send-btn" class="material-symbols-rounded">send</span>
+              <span id="send-btn" class="material-symbols-rounded"></span>
             </div>
           </div>
     </div>
