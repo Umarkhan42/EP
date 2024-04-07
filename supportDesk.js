@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', () =>
 
         emailjs.send(serviceID, templateID, templateParams).then(() => {
             console.log('Success');
+            document.getElementById('username').value = ""; // Reset username field
+            document.getElementById('issue').value = ""; // Reset issue field
         });
     });
 });
