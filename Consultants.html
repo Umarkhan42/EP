@@ -7,56 +7,64 @@
     <link rel="stylesheet" type="text/css" href="cssFolder/Consultants.css">
     <link rel="stylesheet" type="text/css" href="cssfolder/global.css">
     <title>Document</title>
+    <script>
+        function showFile(input) {
+            const file = input.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    if (file.type.startsWith('image')) {
+                        // If it's an image, display it as an image
+                        const img = document.createElement('img');
+                        img.src = e.target.result;
+                        img.style.maxWidth = '100%';
+                        img.style.height = 'auto';
+                        const newTab = window.open();
+                        newTab.document.body.appendChild(img);
+                    } else {
+                        // For other file types, display as text
+                        const fileContent = e.target.result;
+                        const pre = document.createElement('pre');
+                        pre.textContent = fileContent;
+                        const newTab = window.open();
+                        newTab.document.body.appendChild(pre);
+                    }
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <aside>
-            
             <a href="updateinfo.php">
                 <div class="icons-wrapper">
-                    <img 
-                    class="" 
-                    loading="lazy" 
-                    alt="" 
-                    src="./public/icons.svg" />
+                    <img class="" loading="lazy" alt="" src="./public/icons.svg" />
                 </div>
             </a>
-
-          
-    
-    
             <a href="timeoff.php">
                 <div class="g1970-parent">
-                    <img
-                    class=""
-                    loading="lazy"
-                    alt=""
-                    src="./public/g1970.svg"
-                    />
+                    <img class="" loading="lazy" alt="" src="./public/g1970.svg" />
                 </div>
             </a>
-
             <a href="consultantsHP.php">
                 <div>
                     <img src="./public/home.png" alt="">            
                 </div>
             </a>
-
-            
         </aside>
-
         <section class="file">
-            <form action="/action_page.php">
+            <form>
                 <label for="expenseReport">Expense Report</label><br>
-                <input type="file" id="myFile" name="filename"><br>
-                <input type="submit">
+                <input type="file" id="expenseReport" name="expenseReport" onchange="showFile(this)"><br>
+                <input type="button" onclick="showFile(document.getElementById('expenseReport'))" value="Submit">
                 <input type="reset" value="Cancel">
             </form>
-
-            <form action="/action_page.php">
+            <form>
                 <label for="timeSheets">Time Sheets</label><br>
-                <input type="file" id="myFile" name="filename"><br>
-                <input type="submit">
+                <input type="file" id="timeSheets" name="timeSheets" onchange="showFile(this)"><br>
+                <input type="button" onclick="showFile(document.getElementById('timeSheets'))" value="Submit">
                 <input type="reset" value="Cancel">
             </form>
         </section>
