@@ -69,7 +69,7 @@ include 'db.php'; // Include your database connection script
             <div class="header-child">
                 <img class="pfp" src="./public/stock-cut.svg" alt="">
                 <p>Welcome Back User</p>
-                <br><a href="index.php">Logout</a><br>
+                <br><a href="index.php" id="log">Logout</a><br>
             </div>
 
             <img class="fdm-logo" src="./public/fdmlogonew.svg" alt="">
