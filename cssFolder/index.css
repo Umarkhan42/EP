@@ -18,11 +18,9 @@
   }
   
   .fdm-logo-black-1-icon {
-    height: 77.9px;
+    height: 77px;
     width: 126px;
-    position: relative;
-    object-fit: cover;
-    z-index: 1;
+
   }
   
   .container2{

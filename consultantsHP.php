@@ -72,7 +72,7 @@ include 'db.php'; // Include your database connection script
                 <br><a href="index.php">Logout</a><br>
             </div>
 
-            <img class="fdm-logo" src="./public/fdmlogoblack-2@2x.png" alt="">
+            <img class="fdm-logo" src="./public/fdmlogonew.svg" alt="">
         </header>
         
         <section class="annoucements">
@@ -172,7 +172,7 @@ include 'db.php'; // Include your database connection script
                             <textarea id="issue" name="issue" rows="4" cols="50" placeholder="Please describe your issue in detail."></textarea>
                         </div>
                         <div>
-                            <br><button type="submit">Send</button>
+                            <br><button type="submit" id="send-btn">Send</button>
                         </div>
                     </form>
                 </div>

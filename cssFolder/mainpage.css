@@ -14,7 +14,12 @@
 
 body{
     margin-right: 3rem;
+    /* background-color: #1E1E1E; */
+
 }
+
+
+
 
 aside{
     grid-area: aside;
@@ -25,18 +30,19 @@ aside{
     justify-content: center;
     gap: 40px;
     height: 1080px;
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.46);
+    box-shadow: 0 4px 50px #b3adad75;
 }
 
 
 .annoucements{
     grid-area: annoucements;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.46);
+    /* border: 1px solid white; */
+    box-shadow: 0 4px 50px #b3adad75;
     background-color: #f9f9f9;
     height: 20rem;
     overflow: auto;
-    background-color: lightgray;
+    background-color: white;
+
   
 }
 
@@ -60,11 +66,11 @@ aside{
 .todo{
     grid-area: todo;
     height: 20rem;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.46);
+    /* border: 1px solid #ccc; */
+    box-shadow: 0 4px 50px #b3adad75;
     background-color: #f9f9f9;
     overflow: auto;
-    background-color: lightgray;
+    background-color: white;
 
 
 }
@@ -95,11 +101,11 @@ aside{
     grid-area: deskSupport;
     height: 20rem;
     margin-bottom: 4rem;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.46);
+    /* border: 1px solid #ccc; */
+    box-shadow: 0 4px 50px #b3adad75;
     background-color: #f9f9f9;
     overflow: auto;
-    background-color: lightgray;
+    background-color: white;
 
 }
 
@@ -126,12 +132,12 @@ aside{
 
 .projectManagement{
     grid-area: projectManagement;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.46);
+    /* border: 1px solid #ccc; */
+    box-shadow: 0 4px 50px #b3adad75;
     background-color: #f9f9f9;
     height: 20rem;
     overflow: auto;
-    background-color: lightgray;
+    background-color: white;
 
 }
 
@@ -178,8 +184,10 @@ header{
 
 
 .fdm-logo{
-    height: 105px;
-    width: 170px;
+  height: 77px;
+  width: 126px;
+  color: white;
+  
 }
 
 
@@ -320,6 +328,9 @@ header h2 {
   padding: 15px 15px 15px 0;
   font-size: 0.95rem;
 }
+
+
+
 .chat-input span {
   align-self: flex-end;
   color: black;
@@ -361,10 +372,10 @@ header h2 {
 input[type="submit"] {
   font-size: 15px;
   width: 8%;
-  border: 1px solid rgb(116, 116, 116);
+  border: 1px solid black;
   border-radius: 4px;
   text-align: center;
-  background-color: #c0ff48;
+  background-color:#c0ff48;
   color: black;
   cursor: pointer;
   }
@@ -376,7 +387,7 @@ input[type="submit"] {
   input[type="reset"] {
     font-size: 15px;
       width: 6%;
-      border: 1px solid rgb(116, 116, 116);
+      border: 1px solid black;
       border-radius: 4px;
       text-align: center;
     }
@@ -410,7 +421,7 @@ input[type="text"] {
   width: 44px;
   display: flex;
   position: absolute;
-  border: 1px solid rgb(116, 116, 116);
+  border: 1px solid black;
   border-radius: 5px;
   text-align: center;
   background-color: #c0ff48;
@@ -467,7 +478,7 @@ label[for="issue"] {
 #send-btn {
   font-size: 15px;
   width: 50px;
-  border: 1px solid rgb(116, 116, 116);
+    border: 1px solid black;
   border-radius: 5px;
   text-align: center;
   background-color: #c0ff48;

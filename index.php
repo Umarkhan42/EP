@@ -16,7 +16,7 @@
           class="fdm-logo-black-1-icon"
           loading="lazy"
           alt=""
-          src="./assets/fdmlogoblack-1@2x.png"
+          src="./public/fdmlogonew.svg"
         />
         <div class="content-frame">
           <div class="home">Home</div>

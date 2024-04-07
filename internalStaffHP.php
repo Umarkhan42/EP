@@ -67,7 +67,7 @@ include 'db.php'; // Include your database connection script
                 <br><a href="index.php">Logout</a><br>
             </div>
 
-            <img class="fdm-logo" src="./public/fdmlogoblack-2@2x.png" alt="">
+            <img class="fdm-logo" src="./public/fdmlogonew.svg" alt="">
         </header>
         
         <section class="annoucements">

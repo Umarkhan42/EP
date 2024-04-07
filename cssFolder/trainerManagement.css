@@ -61,7 +61,7 @@ aside{
     padding: 20px;
     border: 1px solid #ccc;
     box-shadow: 0 4px 50px rgba(0, 0, 0, 0.46);
-    background-color: lightgray;
+    background-color: white;
     border-radius: 5px;
     height:fit-content;
     
@@ -93,6 +93,8 @@ aside{
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    border: 1px solid black;
+
   }
   
   /* Styles for submit button */
@@ -101,13 +103,15 @@ aside{
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #7ea82f;
-    color: white;
+    background-color:#c0ff48;
+    color: black;
     cursor: pointer;
+    border: 1px solid black;
+
   }
   
   input[type="submit"]:hover {
-    background-color: #7ea82f;
+    background-color: white;
   }
 
   .image-8-icon {
@@ -125,7 +129,7 @@ aside{
     height: 10rem;
     border: 1px solid #ccc;
     box-shadow: 0 4px 50px rgba(0, 0, 0, 0.46);
-    background-color: lightgray;
+    background-color: white;
 
 }
 

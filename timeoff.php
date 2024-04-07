@@ -73,12 +73,12 @@ include 'db.php'; // Include your database connection script
               
         </aside>
 
-        <header> 
+        <!-- <header> 
             
             
             <img class="fdm-logo" src="./public/fdmlogoblack-2@2x.png" alt="">
 
-        </header>
+        </header> -->
 
         <div class="container1">
             <h2>Employee Leave Request</h2>
