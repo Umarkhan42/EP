@@ -438,6 +438,24 @@ input[type="text"] {
   border-radius: 5px;
 }
 
+.addButton {
+  margin-left: 10%;
+  font-size: 15px;
+  width: 44px;
+  display: flex;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #c0ff48;
+  color: black;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: white;
+}
+
 .form-control {
   position: absolute;
 }
@@ -478,4 +496,19 @@ label[for="issue"] {
   margin-top: 5px;
   border-radius: 5px;
   outline: 1px solid black; 
+}
+
+#send-btn {
+  font-size: 15px;
+  width: 50px;
+    border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #c0ff48;
+  color: black;
+  cursor: pointer;
+}
+
+#send-btn:hover {
+  background-color: white;
 }
