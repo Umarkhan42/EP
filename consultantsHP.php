@@ -183,6 +183,7 @@ include 'db.php'; // Include your database connection script
 
         <button class="chatbot-toggler">
             <span class="material-symbols-rounded"></span>
+            <img src="assets/whitechatbot-removebg-preview.png" alt="Chatbot Logo" width= 40px height = 40px>
             <span class="material-symbols-outlined"></span>
           </button>
           <div class="chatbot">
