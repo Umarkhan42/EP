@@ -1,7 +1,7 @@
 // Initialize EmailJS
-const serviceID = 'service_1cr1ucg';
-const templateID = 'template_y2f4buz';
-const publicKey = '6CAa8rXRoiBxmNaJe';
+const serviceID = 'service_rtls3d8';
+const templateID = 'template_7nvxchr';
+const publicKey = 'HCe6yEnLrSL_pgTyZ';
 
 emailjs.init(publicKey);
 

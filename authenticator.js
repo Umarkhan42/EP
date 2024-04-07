@@ -22,9 +22,9 @@ const duration = 3 * 60 * 1000;
 let email = document.getElementById('email');
 let currentRemainingTime;
 
-const serviceID = 'service_1cr1ucg';
-const templateID = 'template_5o3jbpk';
-const publicKey = '6CAa8rXRoiBxmNaJe';
+const serviceID = 'service_rtls3d8';
+const templateID = 'template_iycq7cd';
+const publicKey = 'HCe6yEnLrSL_pgTyZ';
 
 emailjs.init(publicKey);
 
