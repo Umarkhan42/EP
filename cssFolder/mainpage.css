@@ -291,11 +291,10 @@ header h2 {
   font-size: 1.4rem;
 }
 .chatbot .chatbox {
-  overflow-y: auto; /* Ensure vertical scrollbar appears when needed */
-  height: 400px; /* Adjust height as needed */
+  overflow-y: auto;
+  height: 510px;
   padding: 30px 20px 100px;
 }
-
 
 .chatbox .chat {
   display: flex;
@@ -345,8 +344,13 @@ header h2 {
   border-top: 1px solid #ddd;
 }
 .chat-input textarea {
-  height: 35px; /* Adjust the height as needed */
-  padding: 10px; /* Adjust the padding as needed */
+  height: 55px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  max-height: 180px;
+  padding: 15px 15px 15px 0;
   font-size: 0.95rem;
 }
 
@@ -498,7 +502,7 @@ label[for="issue"] {
   outline: 1px solid black; 
 }
 
-#send-btn {
+/* #send-btn {
   font-size: 15px;
   width: 50px;
     border: 1px solid black;
@@ -507,7 +511,7 @@ label[for="issue"] {
   background-color: #c0ff48;
   color: black;
   cursor: pointer;
-}
+} */
 
 #send-btn:hover {
   background-color: white;
