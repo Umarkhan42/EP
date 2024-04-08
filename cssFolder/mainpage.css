@@ -344,15 +344,11 @@ header h2 {
   border-top: 1px solid #ddd;
 }
 .chat-input textarea {
-  height: 55px;
-  width: 100%;
-  border: none;
-  outline: none;
-  resize: none;
-  max-height: 180px;
-  padding: 15px 15px 15px 0;
+  height: 35px; /* Adjust the height as needed */
+  padding: 10px; /* Adjust the padding as needed */
   font-size: 0.95rem;
 }
+
 
 .chat-input span {
   align-self: flex-end;
