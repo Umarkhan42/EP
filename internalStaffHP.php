@@ -197,7 +197,7 @@ include 'db.php'; // Include your database connection script
             </ul>
             <div class="chat-input">
               <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
-              <span id="send-btn" class="material-symbols-rounded"></span>
+              <span id="send-btn1" class="material-symbols-rounded"></span>
             </div>
           </div>
     </div>
