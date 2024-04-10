@@ -78,7 +78,7 @@ list VARCHAR(255)
 
 # 4.Insert dummy data/values
 
-In the SQL tab, copy and paste the following SQL query to insert dummy data into the Employees table:
+Go back to the SQL tab, copy and paste the following SQL query to insert dummy data into the Employees table:
 
 # sql
 
